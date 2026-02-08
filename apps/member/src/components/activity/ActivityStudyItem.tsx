@@ -1,7 +1,8 @@
-import { Link } from "react-router";
 import { Chip } from "@clab/design-system";
 import { GoPeople } from "react-icons/go";
 import { PiCrownSimpleFill } from "react-icons/pi";
+import { Link } from "react-router";
+
 import type { ActivityData } from "@/types/activity";
 
 interface ActivityStudyItemProps {

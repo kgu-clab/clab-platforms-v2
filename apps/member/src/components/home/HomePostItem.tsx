@@ -1,6 +1,6 @@
 import { Chip } from "@clab/design-system";
-import { Link } from "react-router";
 import { IoHeart, IoChatbubbleOutline } from "react-icons/io5";
+import { Link } from "react-router";
 
 export interface CommunityPostItemProps {
   id: string;

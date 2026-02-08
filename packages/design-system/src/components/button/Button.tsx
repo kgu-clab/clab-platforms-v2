@@ -1,10 +1,12 @@
-import type { ButtonHTMLAttributes, ReactNode } from "react";
-import { buttonVariant, type ButtonSize, type ButtonColor } from "./button.css";
-import { cn } from "../../utils/cn";
+import type { ButtonHTMLAttributes, ReactNode } from 'react';
+import { buttonVariant, type ButtonSize, type ButtonColor } from './button.css';
+import { cn } from '../../utils/cn';
 
-export interface ButtonProps
-  extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "color" | "size"> {
-  size?: ButtonSize | "small";
+export interface ButtonProps extends Omit<
+  ButtonHTMLAttributes<HTMLButtonElement>,
+  'color' | 'size'
+> {
+  size?: ButtonSize | 'small';
   color?: Exclude<ButtonColor, null>;
   children: ReactNode;
   onClick?: () => void;
@@ -14,7 +16,7 @@ export default function Button({
   size,
   color,
   children,
-  type = "button",
+  type = 'button',
   onClick,
   className,
   ...props

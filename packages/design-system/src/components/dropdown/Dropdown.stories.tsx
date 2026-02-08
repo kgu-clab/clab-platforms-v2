@@ -1,21 +1,20 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import Dropdown from "./Dropdown";
-import Button from "../button/Button";
-import { IoChevronDown } from "react-icons/io5";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import Dropdown from './Dropdown';
+import Button from '../button/Button';
+import { IoChevronDown } from 'react-icons/io5';
 
 const meta = {
-  title: "Components/Dropdown",
+  title: 'Components/Dropdown',
   component: Dropdown,
   parameters: {
-    layout: "centered",
+    layout: 'centered',
     docs: {
       description: {
-        component:
-          "Dropdown 컴포넌트는 Radix UI Dropdown Menu를 기반으로 한 드롭다운 메뉴입니다.",
+        component: 'Dropdown 컴포넌트는 Radix UI Dropdown Menu를 기반으로 한 드롭다운 메뉴입니다.',
       },
     },
   },
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 } satisfies Meta<typeof Dropdown>;
 
 export default meta;
@@ -23,7 +22,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    align: "start",
+    align: 'start',
     trigger: (
       <Button color="outlineActive" size="small" className="gap-sm">
         <span className="text-14-medium text-primary">언어</span>

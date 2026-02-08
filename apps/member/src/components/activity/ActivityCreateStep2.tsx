@@ -1,4 +1,5 @@
 import { Input, Section, Button } from "@clab/design-system";
+
 import { useActivityCreate } from "@/model/activity";
 
 export default function ActivityCreateStep2() {

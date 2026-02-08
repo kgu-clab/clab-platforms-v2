@@ -1,12 +1,14 @@
 import { Section } from "@clab/design-system";
-import { useSearchParams } from "react-router";
 import { useState } from "react";
-import ActivityStudyPage from "./ActivityStudyPage";
+import { useSearchParams } from "react-router";
+
 import {
   ActivityCalendar,
   ActivityCalendarHeader,
   ActivityScheduleList,
 } from "@/components/activity";
+
+import ActivityStudyPage from "./ActivityStudyPage";
 
 export default function ActivityHomePage() {
   const [searchParams] = useSearchParams();

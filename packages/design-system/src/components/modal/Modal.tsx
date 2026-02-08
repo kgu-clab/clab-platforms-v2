@@ -1,5 +1,5 @@
-import type { HTMLAttributes, ReactNode } from "react";
-import { IoClose } from "react-icons/io5";
+import type { HTMLAttributes, ReactNode } from 'react';
+import { IoClose } from 'react-icons/io5';
 import {
   modalBackdropVariant,
   modalBodyVariant,
@@ -11,8 +11,8 @@ import {
   modalSubtitleVariant,
   modalTitleVariant,
   type ModalContentSize,
-} from "./modal.css";
-import { cn } from "../../utils/cn";
+} from './modal.css';
+import { cn } from '../../utils/cn';
 
 export interface ModalProps extends HTMLAttributes<HTMLDivElement> {
   isOpen: boolean;
@@ -56,12 +56,8 @@ export default function Modal({
                 <IoClose size={20} color="#808080" />
               </button>
             </div>
-            {subtitle && (
-              <p className={cn(modalSubtitleVariant())}>{subtitle}</p>
-            )}
-            {description && (
-              <p className={cn(modalDescriptionVariant())}>{description}</p>
-            )}
+            {subtitle && <p className={cn(modalSubtitleVariant())}>{subtitle}</p>}
+            {description && <p className={cn(modalDescriptionVariant())}>{description}</p>}
           </div>
         )}
         <div className={cn(modalBodyVariant())}>{children}</div>

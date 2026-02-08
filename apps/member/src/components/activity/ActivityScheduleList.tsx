@@ -1,7 +1,6 @@
+import { Chip, Section } from "@clab/design-system";
 import { FiClock, FiMapPin } from "react-icons/fi";
 import { GoPeople } from "react-icons/go";
-
-import { Chip, Section } from "@clab/design-system";
 
 export default function ActivityScheduleList() {
   return (

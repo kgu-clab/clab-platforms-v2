@@ -1,6 +1,6 @@
+import { Button } from "@clab/design-system";
 import { MdOutlineImage } from "react-icons/md";
 import { MdHowToVote } from "react-icons/md";
-import { Button } from "@clab/design-system";
 
 interface CommunityWriteBottomBarProps {
   onImageClick?: () => void;

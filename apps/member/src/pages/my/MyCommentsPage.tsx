@@ -1,9 +1,11 @@
 import { Header, Scrollable, Title } from "@clab/design-system";
-import { PostDetailCommentItem } from "@/components/community";
-import { MOCK_MY_COMMENTS } from "@/shared/mock/my";
-import { ROUTE } from "@/shared/config/route";
 import { GoChevronLeft } from "react-icons/go";
 import { useNavigate } from "react-router";
+
+import { PostDetailCommentItem } from "@/components/community";
+
+import { ROUTE } from "@/shared/config/route";
+import { MOCK_MY_COMMENTS } from "@/shared/mock/my";
 
 export default function MyCommentsPage() {
   const navigate = useNavigate();

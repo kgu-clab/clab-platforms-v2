@@ -1,24 +1,15 @@
-import type { HTMLAttributes, ReactNode } from "react";
-import { cn } from "../../utils/cn";
-import Title from "../title/Title";
+import type { HTMLAttributes, ReactNode } from 'react';
+import { cn } from '../../utils/cn';
+import Title from '../title/Title';
 
-export interface SectionProps
-  extends Omit<HTMLAttributes<HTMLElement>, "title"> {
+export interface SectionProps extends Omit<HTMLAttributes<HTMLElement>, 'title'> {
   children: ReactNode;
   title?: ReactNode;
 }
 
-export default function Section({
-  className,
-  children,
-  title,
-  ...props
-}: SectionProps) {
+export default function Section({ className, children, title, ...props }: SectionProps) {
   return (
-    <section
-      className={cn("gap-lg flex w-full flex-col", className)}
-      {...props}
-    >
+    <section className={cn('gap-lg flex w-full flex-col', className)} {...props}>
       {title && <Title>{title}</Title>}
       {children}
     </section>
@@ -26,11 +17,7 @@ export default function Section({
 }
 
 function ListSection({ className, children }: SectionProps) {
-  return (
-    <div className={cn("flex w-full flex-col gap-[10px]", className)}>
-      {children}
-    </div>
-  );
+  return <div className={cn('flex w-full flex-col gap-[10px]', className)}>{children}</div>;
 }
 
 Section.List = ListSection;

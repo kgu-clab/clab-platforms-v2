@@ -1,8 +1,10 @@
 import { Header, Scrollable, Title } from "@clab/design-system";
-import { MOCK_MY_POSTS } from "@/shared/mock/my";
 import { GoChevronLeft } from "react-icons/go";
 import { useNavigate } from "react-router";
+
 import CommunityPostItem from "@/components/community/CommunityPostItem";
+
+import { MOCK_MY_POSTS } from "@/shared/mock/my";
 
 export default function MyPostsPage() {
   const navigate = useNavigate();

@@ -1,5 +1,5 @@
-import type { HTMLAttributes, ReactNode } from "react";
-import { cn } from "../../utils/cn";
+import type { HTMLAttributes, ReactNode } from 'react';
+import { cn } from '../../utils/cn';
 
 export interface TitleProps extends HTMLAttributes<HTMLElement> {
   children: ReactNode;
@@ -7,7 +7,7 @@ export interface TitleProps extends HTMLAttributes<HTMLElement> {
 
 export default function Title({ className, children, ...props }: TitleProps) {
   return (
-    <div className={cn("text-20-semibold", className)} {...props}>
+    <div className={cn('text-20-semibold', className)} {...props}>
       {children}
     </div>
   );

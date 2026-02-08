@@ -1,7 +1,4 @@
 import { Header, Tabs, Title } from "@clab/design-system";
-import { BottomNavbar } from "@/components/menu";
-
-import { ROUTE } from "@/shared/config/route";
 import {
   BsFillClipboardFill,
   BsFillEmojiSmileFill,
@@ -9,6 +6,10 @@ import {
   BsFillQuestionCircleFill,
 } from "react-icons/bs";
 import { Outlet } from "react-router";
+
+import { BottomNavbar } from "@/components/menu";
+
+import { ROUTE } from "@/shared/config/route";
 
 export default function CommunityLayout() {
   return (

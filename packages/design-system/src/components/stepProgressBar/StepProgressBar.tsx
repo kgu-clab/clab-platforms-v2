@@ -1,10 +1,6 @@
-import type { HTMLAttributes } from "react";
-import {
-  stepProgressBarVariant,
-  stepVariant,
-  type StepStatus,
-} from "./stepProgressBar.css";
-import { cn } from "../../utils/cn";
+import type { HTMLAttributes } from 'react';
+import { stepProgressBarVariant, stepVariant, type StepStatus } from './stepProgressBar.css';
+import { cn } from '../../utils/cn';
 
 export interface StepProgressBarProps extends HTMLAttributes<HTMLDivElement> {
   currentStep: number;
@@ -20,7 +16,7 @@ export default function StepProgressBar({
   return (
     <div className={cn(stepProgressBarVariant(), className)} {...props}>
       {Array.from({ length: totalSteps }, (_, index) => {
-        const status: StepStatus = index < currentStep ? "active" : "inactive";
+        const status: StepStatus = index < currentStep ? 'active' : 'inactive';
         return <div key={index} className={stepVariant({ status })} />;
       })}
     </div>

@@ -1,12 +1,14 @@
 import { Button, Header, Scrollable, Section } from "@clab/design-system";
-import { BottomNavbar } from "@/components/menu";
-import { HomeCarousel, HomePostItem, HomeLink } from "@/components/home";
-import { ROUTE } from "@/shared/config/route";
 import {
   IoCalendarOutline,
   IoPeopleOutline,
   IoBookOutline,
 } from "react-icons/io5";
+
+import { HomeCarousel, HomePostItem, HomeLink } from "@/components/home";
+import { BottomNavbar } from "@/components/menu";
+
+import { ROUTE } from "@/shared/config/route";
 import { communityPostsList } from "@/shared/mock/community-posts";
 
 export default function HomePage() {

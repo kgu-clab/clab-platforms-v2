@@ -1,8 +1,10 @@
+import { Chip } from "@clab/design-system";
 import { IoHeartOutline, IoChatbubbleOutline } from "react-icons/io5";
 import { useNavigate } from "react-router";
-import { Chip } from "@clab/design-system";
-import { ROUTE } from "@/shared/config/route";
+
 import type { PostData } from "@/types/community";
+
+import { ROUTE } from "@/shared/config/route";
 
 interface CommunityPostItemProps {
   postData: PostData;

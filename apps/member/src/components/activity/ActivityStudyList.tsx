@@ -1,5 +1,7 @@
 import { Section } from "@clab/design-system";
+
 import { MOCK_ACTIVITIES } from "@/shared/mock/activity";
+
 import ActivityStudyItem from "./ActivityStudyItem";
 
 export default function ActivityStudyList() {

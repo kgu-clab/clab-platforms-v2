@@ -1,4 +1,5 @@
 import { Button } from "@clab/design-system";
+
 import { MOCK_CATEGORIES } from "@/shared/mock/community";
 
 export interface CommunityWriteSelectorProps {

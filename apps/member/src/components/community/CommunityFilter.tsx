@@ -1,7 +1,8 @@
+import { Button, Dropdown } from "@clab/design-system";
 import { useState } from "react";
 import { IoChevronDown } from "react-icons/io5";
+
 import { CATEGORY } from "@/types/community";
-import { Button, Dropdown } from "@clab/design-system";
 
 interface CommunityFilterProps {
   tab: string;

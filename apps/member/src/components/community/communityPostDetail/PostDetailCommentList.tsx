@@ -1,5 +1,7 @@
 import { Chip } from "@clab/design-system";
+
 import type { PostDetailCommentData } from "@/types/community";
+
 import PostDetailCommentItem from "./PostDetailCommentItem";
 
 interface PostDetailCommentListProps {

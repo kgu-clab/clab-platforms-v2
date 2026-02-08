@@ -1,5 +1,6 @@
-import CommunityPostItem from "./CommunityPostItem";
 import { MOCK_POSTS } from "@/shared/mock/community";
+
+import CommunityPostItem from "./CommunityPostItem";
 
 export default function CommunityPostList() {
   return (

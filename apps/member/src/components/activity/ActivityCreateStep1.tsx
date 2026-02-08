@@ -1,7 +1,9 @@
 import { Input, Section, Button } from "@clab/design-system";
-import ActivityCurriculumItem from "./ActivityCurriculumItem";
-import { useActivityCreate } from "@/model/activity";
 import { IoAdd } from "react-icons/io5";
+
+import { useActivityCreate } from "@/model/activity";
+
+import ActivityCurriculumItem from "./ActivityCurriculumItem";
 
 export default function ActivityCreateStep1() {
   const {

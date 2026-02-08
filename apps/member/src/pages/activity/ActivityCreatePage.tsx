@@ -4,11 +4,13 @@ import {
   StepProgressBar,
   Button,
 } from "@clab/design-system";
-import ActivityCreateStep1 from "@/components/activity/ActivityCreateStep1";
-import ActivityCreateStep2 from "@/components/activity/ActivityCreateStep2";
-import { ActivityCreateProvider, useActivityCreate } from "@/model/activity";
 import { GoChevronLeft } from "react-icons/go";
 import { useNavigate } from "react-router";
+
+import { ActivityCreateProvider, useActivityCreate } from "@/model/activity";
+
+import ActivityCreateStep1 from "@/components/activity/ActivityCreateStep1";
+import ActivityCreateStep2 from "@/components/activity/ActivityCreateStep2";
 
 function ActivityCreatePageContent() {
   const navigate = useNavigate();

@@ -1,6 +1,7 @@
-import Calendar from "react-calendar";
-import "./ActivityCalendar.css";
 import dayjs from "dayjs";
+import Calendar from "react-calendar";
+
+import "./ActivityCalendar.css";
 
 interface ActivityCalendarProps {
   value: Date;

@@ -1,5 +1,7 @@
 import { createBrowserRouter } from "react-router";
-import RootLayout from "../layout/RootLayout";
+
+import { ROUTE } from "@/shared/config/route";
+
 import {
   ActivityHomePage,
   HomePage,
@@ -17,9 +19,10 @@ import {
   MyLibraryPage,
   MyActivityPage,
 } from "@/pages";
-import { ROUTE } from "@/shared/config/route";
+
 import ActivityLayout from "../layout/ActivityLayout";
 import CommunityLayout from "../layout/CommunityLayout";
+import RootLayout from "../layout/RootLayout";
 
 const activityRoutes = [
   {

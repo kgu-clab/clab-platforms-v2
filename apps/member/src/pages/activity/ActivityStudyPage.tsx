@@ -1,7 +1,9 @@
-import { ActivityStudyList } from "@/components/activity";
 import { PlusButton, Section } from "@clab/design-system";
-import { ROUTE } from "@/shared/config/route";
 import { useNavigate } from "react-router";
+
+import { ActivityStudyList } from "@/components/activity";
+
+import { ROUTE } from "@/shared/config/route";
 
 export default function ActivityStudyPage() {
   const navigate = useNavigate();

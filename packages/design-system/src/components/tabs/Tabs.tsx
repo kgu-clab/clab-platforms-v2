@@ -1,12 +1,7 @@
-import {
-  cloneElement,
-  type HTMLAttributes,
-  type ReactElement,
-  type ReactNode,
-} from "react";
-import { cn } from "../../utils/cn";
-import { useLocation, useNavigate } from "react-router";
-import type { IconBaseProps } from "react-icons";
+import { cloneElement, type HTMLAttributes, type ReactElement, type ReactNode } from 'react';
+import { cn } from '../../utils/cn';
+import { useLocation, useNavigate } from 'react-router';
+import type { IconBaseProps } from 'react-icons';
 
 export interface TabsProps extends HTMLAttributes<HTMLElement> {
   children: ReactNode;
@@ -21,10 +16,7 @@ interface TabsItemProps extends HTMLAttributes<HTMLButtonElement> {
 export default function Tabs({ className, children, ...props }: TabsProps) {
   return (
     <header
-      className={cn(
-        "px-gutter gap-lg box-border flex w-full shrink-0",
-        className,
-      )}
+      className={cn('px-gutter gap-lg box-border flex w-full shrink-0', className)}
       {...props}
     >
       {children}
@@ -36,7 +28,7 @@ function TabsItem({ className, icon, label, href, ...props }: TabsItemProps) {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const [targetPath, targetSearch] = href.split("?");
+  const [targetPath, targetSearch] = href.split('?');
   const currentPath = location.pathname;
   const currentSearch = location.search;
 
@@ -47,24 +39,19 @@ function TabsItem({ className, icon, label, href, ...props }: TabsItemProps) {
   return (
     <button
       className={cn(
-        "gap-md pb-sm px-xs flex cursor-pointer items-center justify-center border-b-2 border-transparent focus:outline-none",
+        'gap-md pb-sm px-xs flex cursor-pointer items-center justify-center border-b-2 border-transparent focus:outline-none',
         className,
-        isActive && "border-primary",
+        isActive && 'border-primary'
       )}
       onClick={() => navigate(href)}
       {...props}
     >
-      <span className={cn("text-gray-300", isActive && "text-primary")}>
+      <span className={cn('text-gray-300', isActive && 'text-primary')}>
         {cloneElement(icon as ReactElement<IconBaseProps>, {
           size: 16,
         })}
       </span>
-      <span
-        className={cn(
-          "font-size-18 font-semibold text-gray-300",
-          isActive && "text-primary",
-        )}
-      >
+      <span className={cn('font-size-18 font-semibold text-gray-300', isActive && 'text-primary')}>
         {label}
       </span>
     </button>

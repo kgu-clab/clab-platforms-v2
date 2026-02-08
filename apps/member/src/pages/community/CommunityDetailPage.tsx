@@ -1,11 +1,13 @@
 import { Header, Scrollable } from "@clab/design-system";
+import { GoChevronLeft } from "react-icons/go";
+import { useNavigate } from "react-router";
+
 import {
   PostDetailContent,
   PostDetailCommentInput,
   PostDetailCommentList,
 } from "@/components/community";
-import { useNavigate } from "react-router";
-import { GoChevronLeft } from "react-icons/go";
+
 import { MOCK_POST, MOCK_COMMENTS } from "@/shared/mock/community";
 
 export default function CommunityDetailPage() {

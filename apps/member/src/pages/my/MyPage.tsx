@@ -1,11 +1,13 @@
 import { Header, Scrollable, Section, Title } from "@clab/design-system";
+import { BiCommentDetail, BiCommentError } from "react-icons/bi";
+import { IoCubeOutline, IoNotificationsOutline } from "react-icons/io5";
+import { RiBook2Line, RiFilePaper2Line, RiLogoutBoxLine } from "react-icons/ri";
+import { TbXboxX } from "react-icons/tb";
+
 import { BottomNavbar } from "@/components/menu";
 import { MyMenuItem } from "@/components/my";
+
 import { ROUTE } from "@/shared/config/route";
-import { RiBook2Line, RiFilePaper2Line, RiLogoutBoxLine } from "react-icons/ri";
-import { BiCommentDetail, BiCommentError } from "react-icons/bi";
-import { TbXboxX } from "react-icons/tb";
-import { IoCubeOutline, IoNotificationsOutline } from "react-icons/io5";
 
 export default function MyPage() {
   return (

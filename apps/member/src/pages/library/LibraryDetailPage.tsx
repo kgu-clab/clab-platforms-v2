@@ -7,8 +7,9 @@ import {
   Section,
   Title,
 } from "@clab/design-system";
-import { useNavigate } from "react-router";
 import { GoChevronLeft } from "react-icons/go";
+import { useNavigate } from "react-router";
+
 import { MOCK_BOOK } from "@/shared/mock/library";
 
 export default function LibraryDetailPage() {

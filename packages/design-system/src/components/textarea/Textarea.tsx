@@ -1,13 +1,8 @@
-import type { TextareaHTMLAttributes } from "react";
-import {
-  textareaWrapperVariant,
-  textareaInputVariant,
-  type TextareaSize,
-} from "./textarea.css";
-import { cn } from "@/shared/utils/cn";
+import type { TextareaHTMLAttributes } from 'react';
+import { textareaWrapperVariant, textareaInputVariant, type TextareaSize } from './textarea.css';
+import { cn } from '@/shared/utils/cn';
 
-export interface TextareaProps
-  extends Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, "size"> {
+export interface TextareaProps extends Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, 'size'> {
   size?: TextareaSize;
   showCounter?: boolean;
   wrapperClassName?: string;
@@ -22,7 +17,7 @@ export default function Textarea({
   wrapperClassName,
   ...props
 }: TextareaProps) {
-  const currentLength = typeof value === "string" ? value.length : 0;
+  const currentLength = typeof value === 'string' ? value.length : 0;
 
   return (
     <div className={cn(textareaWrapperVariant({ size }), wrapperClassName)}>

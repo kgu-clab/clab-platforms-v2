@@ -1,4 +1,3 @@
-import { StudyMemberGrid } from "@/components/activity";
 import {
   Button,
   Chip,
@@ -9,9 +8,11 @@ import {
   Section,
   Textarea,
 } from "@clab/design-system";
+import { useState } from "react";
 import { GoChevronLeft } from "react-icons/go";
 import { useNavigate } from "react-router";
-import { useState } from "react";
+
+import { StudyMemberGrid } from "@/components/activity";
 
 export default function StudyDetailPage() {
   const navigate = useNavigate();

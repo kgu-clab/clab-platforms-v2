@@ -1,20 +1,20 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import StepProgressBar from "./StepProgressBar";
+import StepProgressBar from './StepProgressBar';
 
 const meta = {
-  title: "Components/StepProgressBar",
+  title: 'Components/StepProgressBar',
   component: StepProgressBar,
   parameters: {
-    layout: "centered",
+    layout: 'centered',
   },
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   argTypes: {
     currentStep: {
-      control: "number",
+      control: 'number',
     },
     totalSteps: {
-      control: "number",
+      control: 'number',
     },
   },
 } satisfies Meta<typeof StepProgressBar>;
@@ -26,7 +26,7 @@ export const Step1Of2: Story = {
   args: {
     currentStep: 1,
     totalSteps: 2,
-    className: "w-[375px]",
+    className: 'w-[375px]',
   },
 };
 
@@ -34,7 +34,7 @@ export const Step2Of2: Story = {
   args: {
     currentStep: 2,
     totalSteps: 2,
-    className: "w-[375px]",
+    className: 'w-[375px]',
   },
 };
 
@@ -42,7 +42,7 @@ export const Step1Of3: Story = {
   args: {
     currentStep: 1,
     totalSteps: 3,
-    className: "w-[375px]",
+    className: 'w-[375px]',
   },
 };
 
@@ -50,7 +50,7 @@ export const Step2Of3: Story = {
   args: {
     currentStep: 2,
     totalSteps: 3,
-    className: "w-[375px]",
+    className: 'w-[375px]',
   },
 };
 
@@ -58,6 +58,6 @@ export const Step3Of3: Story = {
   args: {
     currentStep: 3,
     totalSteps: 3,
-    className: "w-[375px]",
+    className: 'w-[375px]',
   },
 };

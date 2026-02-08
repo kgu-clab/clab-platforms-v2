@@ -1,7 +1,8 @@
-import { IoChatbubbleOutline, IoHeart, IoHeartOutline } from "react-icons/io5";
-import type { PostDetailCommentData } from "@/types/community";
 import { useState } from "react";
+import { IoChatbubbleOutline, IoHeart, IoHeartOutline } from "react-icons/io5";
 import { useNavigate } from "react-router";
+
+import type { PostDetailCommentData } from "@/types/community";
 
 interface PostDetailCommentItemProps {
   commentData: PostDetailCommentData;

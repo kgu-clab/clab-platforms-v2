@@ -1,11 +1,13 @@
 import { Header, PlusButton, Section, Title } from "@clab/design-system";
-import { BottomNavbar } from "@/components/menu";
+import { useNavigate } from "react-router";
+
 import {
   LibrarySearchBar,
   LibraryFilter,
   LibraryBookList,
 } from "@/components/library";
-import { useNavigate } from "react-router";
+import { BottomNavbar } from "@/components/menu";
+
 import { ROUTE } from "@/shared/config/route";
 
 export default function LibraryPage() {

@@ -1,4 +1,5 @@
 import { useState, type ReactNode } from "react";
+
 import { ActivityCreateContext } from "./ActivityCreateContext";
 
 interface ActivityCreateProviderProps {

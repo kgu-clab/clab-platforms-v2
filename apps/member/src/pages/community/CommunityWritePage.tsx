@@ -1,8 +1,3 @@
-import { useState } from "react";
-import {
-  CommunityWriteSelector,
-  CommunityWriteBottomBar,
-} from "@/components/community";
 import {
   Header,
   Scrollable,
@@ -10,8 +5,14 @@ import {
   Input,
   Section,
 } from "@clab/design-system";
+import { useState } from "react";
 import { GoChevronLeft } from "react-icons/go";
 import { useNavigate } from "react-router";
+
+import {
+  CommunityWriteSelector,
+  CommunityWriteBottomBar,
+} from "@/components/community";
 
 export default function CommunityWritePage() {
   const [title, setTitle] = useState("");

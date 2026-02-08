@@ -1,10 +1,11 @@
 import { Header, Tabs, Title } from "@clab/design-system";
-import { BottomNavbar } from "@/components/menu";
-import { FaCalendarDays } from "react-icons/fa6";
 import { BsPeopleFill } from "react-icons/bs";
+import { FaCalendarDays } from "react-icons/fa6";
+import { Outlet } from "react-router";
+
+import { BottomNavbar } from "@/components/menu";
 
 import { ROUTE } from "@/shared/config/route";
-import { Outlet } from "react-router";
 
 export default function ActivityLayout() {
   return (

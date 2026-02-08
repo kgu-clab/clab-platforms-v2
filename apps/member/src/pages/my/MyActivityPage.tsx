@@ -1,8 +1,10 @@
 import { Header, Scrollable, Section, Title } from "@clab/design-system";
-import { ActivityStudyItem } from "@/components/activity";
-import { MOCK_ACTIVITIES } from "@/shared/mock/activity";
-import { useNavigate } from "react-router";
 import { GoChevronLeft } from "react-icons/go";
+import { useNavigate } from "react-router";
+
+import { ActivityStudyItem } from "@/components/activity";
+
+import { MOCK_ACTIVITIES } from "@/shared/mock/activity";
 
 export default function MyActivityPage() {
   const navigate = useNavigate();

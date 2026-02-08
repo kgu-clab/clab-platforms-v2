@@ -1,18 +1,13 @@
-import type { HTMLAttributes, ReactNode } from "react";
-import { cn } from "../../utils/cn";
-import { chipVariant, type ChipColor } from "./chip.css";
+import type { HTMLAttributes, ReactNode } from 'react';
+import { cn } from '../../utils/cn';
+import { chipVariant, type ChipColor } from './chip.css';
 
 export interface ChipProps extends HTMLAttributes<HTMLDivElement> {
   color?: Exclude<ChipColor, null>;
   children: ReactNode;
 }
 
-export default function Chip({
-  color,
-  children,
-  className,
-  ...props
-}: ChipProps) {
+export default function Chip({ color, children, className, ...props }: ChipProps) {
   return (
     <div className={cn(chipVariant({ color }), className)} {...props}>
       {children}

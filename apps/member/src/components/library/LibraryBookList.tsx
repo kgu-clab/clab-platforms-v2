@@ -1,5 +1,6 @@
-import LibraryBookItem from "./LibraryBookItem";
 import { MOCK_BOOKS } from "@/shared/mock/library";
+
+import LibraryBookItem from "./LibraryBookItem";
 
 export default function LibraryBookList() {
   return (
