@@ -1,0 +1,76 @@
+@import "@clab/config/theme.css";
+
+/* design-system 패키지 클래스가 번들에 포함되도록 스캔 대상 추가 */
+@source "../../../../packages/design-system/src";
+
+@font-face {
+  font-family: "WantedSans";
+  src: url("/fonts/WantedSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "WantedSans";
+  src: url("/fonts/WantedSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "WantedSans";
+  src: url("/fonts/WantedSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "WantedSans";
+  src: url("/fonts/WantedSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "WantedSans";
+  src: url("/fonts/WantedSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "WantedSans";
+  src: url("/fonts/WantedSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "WantedSans";
+  src: url("/fonts/WantedSans-ExtraBlack.ttf") format("truetype");
+  font-weight: 950;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: var(--font-family-primary);
+  line-height: 1.5;
+  font-weight: var(--font-weight-regular);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+}
