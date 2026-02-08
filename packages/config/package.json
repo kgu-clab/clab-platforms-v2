@@ -1,0 +1,11 @@
+{
+  "name": "@clab/config",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./theme.css": "./theme.css"
+  },
+  "dependencies": {
+    "tailwindcss": "^4.1.18"
+  }
+}
