@@ -1,0 +1,32 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      run: |
+        git diff --cached --name-only \
+          | grep -E '^(apps|packages)/' \
+          | cut -d/ -f1,2 \
+          | sort -u \
+          | while read -r pkg; do
+              pnpm exec turbo run lint --filter="./$pkg"
+            done
+
+    format:
+      run: pnpm format
+      stage_fixed: true
+
+commit-msg:
+  run: |
+    pnpm commitlint --edit {1} || {
+      echo ""
+      echo "🚨 커밋 메시지 형식이 올바르지 않습니다."
+      echo ""
+      echo "형식:"
+      echo "  🚨 (scope) 메시지"
+      echo ""
+      echo "예시:"
+      echo "  ✨ (land) 코드 린트룰 적용"
+      echo "  🐛 (member) 응답 파싱 오류 수정"
+      echo ""
+      exit 1
+    }
