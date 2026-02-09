@@ -208,6 +208,7 @@ dist/
 build/
 .next/
 out/
+**/storybook-static/
 
 # Environment variables
 .env
